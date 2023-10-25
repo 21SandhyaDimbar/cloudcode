@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="survey-form">
+        <h2>Survey Form</h2>
+        <table>
+          <tr>
+            <td>
+              <label for="first-name"> Frist Name</label> <br />
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                class="input"
+                required
+              />
+            </td>
+            <td>
+              <label for="last-name">Last Name</label> <br />
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                class="input"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="dob">Date of Birth</label> <br />
+              <input type="date" name="dob" id="dob" class="input" required />
+            </td>
+            <td>
+              <label for="country">Country</label> <br />
+              <select id="country" required class="input">
+                <option value="" disabled selected>Select Country</option>
+                <option>Afghanistan</option>
+                <option>Australia</option>
+                <option>Bangladesh</option>
+                <option>Brazil</option>
+                <option>Canada</option>
+                <option>China</option>
+                <option>India</option>
+                <option>Japan</option>
+                <option>USA</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Gender">Gender</label> <br />
+              <input
+                type="checkbox"
+                name="Gender"
+                id="male"
+                style="margin-top: 7px"
+              />
+              male
+              <input
+                type="checkbox"
+                name="Gender"
+                id="female"
+                style="margin-left: 10px"
+              />
+              Female
+            </td>
+            <td>
+              <label for="profession">Profession</label> <br />
+              <input type="text" id="profession" class="input" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email">Email:</label> <br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="input"
+                required
+              />
+            </td>
+            <td>
+              <label for="mobile">Mobile Number:</label> <br />
+              <input
+                type="tel"
+                name="mobile"
+                id="mobile"
+                class="input"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" onclick="submitForm()" class="submitBtn">Submit</button>
+            </td>
+            <td>
+              <button type="button" onclick="resetForm()" class="resetBtn">Reset</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <div id="popup" class="popup">
+      <div class="popup-content" id="popup-content"></div>
+      <button onclick="closePopup()" class="closebtn">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

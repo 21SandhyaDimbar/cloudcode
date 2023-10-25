@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="cals.css">
+</head>
+<body>
+    <div class="caculator">
+        <input type="text" placeholder="0" id="inputBox" readonly/>
+        <div>
+            <button class="operator" onclick="clearInput() ">AC</button>
+            <button class="operator" onclick="deleteLastDigit()">DEL</button>
+            <button class="operator" onclick="inputBtn('%')" >%</button>       
+            <button class="operator" onclick="inputBtn('/')">/</button>    
+        </div>
+        <div>
+            <button onclick="inputBtn('7')">7</button>
+            <button onclick="inputBtn('8')">8</button>
+            <button onclick="inputBtn('9')">9</button>       
+            <button onclick="inputBtn('*')" class="operator">*</button>    
+        </div>
+        <div>
+            <button onclick="inputBtn('4')">4</button>
+            <button onclick="inputBtn('5')">5</button>
+            <button onclick="inputBtn('6')">6</button>       
+            <button onclick="inputBtn('-')" class="operator">-</button>    
+        </div>
+        <div>
+            <button onclick="inputBtn('1')">1</button>
+            <button onclick="inputBtn('2')">2</button>
+            <button onclick="inputBtn('3')">3</button>       
+            <button onclick="inputBtn('+')" class="operator">+</button>    
+        </div>
+        <div>
+            <button onclick="inputBtn('00')">00</button>
+            <button onclick="inputBtn('0')">0</button>
+            <button onclick="inputBtn('.')">.</button>       
+            <button onclick="calculate()" class="equalBtn">=</button>    
+        </div>
+          <script src="calculator.js">
+         
+          </script>
+    </div>
+</body>
+</html>
